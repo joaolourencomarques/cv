@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Map of academic activity · João Lourenço Marques</title>
+<meta name="description" content="João Lourenço Marques · Associate Professor with Habilitation · University of Aveiro">
+<link rel="alternate" hreflang="pt" href="../../../pt/investigacao/mapa/">
+<link rel="stylesheet" href="../../../static/style.css?v=54c2760926">
+</head>
+<body>
+<header class="topo">
+  <div class="topo-in">
+    <a class="marca" href="../../../en/">João Lourenço Marques</a>
+    <nav aria-label="menu">
+      <a href="../../../en/">About</a>
+      <a href="../../../en/investigacao/" aria-current="page">Scientific activity</a>
+      <a href="../../../en/ensino/">Teaching</a>
+      <a href="../../../en/percurso/">Background</a>
+      
+      <a class="lingua" href="../../../pt/investigacao/mapa/" hreflang="pt" lang="pt">PT</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<div class="cab-vertente cab-tema">
+  <div>
+    <p class="sobretitulo"><a href="../">Scientific activity</a></p>
+    <h1>Map of academic activity</h1>
+    <p class="descritor">The seven research themes and the approaches most present in each one. Choose a theme or an approach to see its links and some selected work.</p>
+  </div>
+</div>
+<div class="grelha-vertente">
+  
+<nav class="indice" aria-label="Scientific activity">
+  <div class="ind-item"><a class="tema" href="../habitacao/" aria-describedby="dica-habitacao">Housing and real estate markets</a><span class="dica" role="tooltip" id="dica-habitacao">Prices, property valuation, access to housing, housing policy and urban transformation.</span></div>
+  <div class="ind-item"><a class="tema" href="../educacao/" aria-describedby="dica-educacao">Education and education policy</a><span class="dica" role="tooltip" id="dica-educacao">Education governance, school networks, infrastructure planning and evaluation of education policies.</span></div>
+  <div class="ind-item"><a class="tema" href="../demografia/" aria-describedby="dica-demografia">Demography and territorial development</a><span class="dica" role="tooltip" id="dica-demografia">Population dynamics, ageing, migration, regional cohesion and territorial sustainability.</span></div>
+  <div class="ind-item"><a class="tema" href="../servicos-publicos/" aria-describedby="dica-servicos-publicos">Public services and spatial justice</a><span class="dica" role="tooltip" id="dica-servicos-publicos">Health, local services, accessibility, quality of life and fair distribution of opportunities.</span></div>
+  <div class="ind-item"><a class="tema" href="../governacao/" aria-describedby="dica-governacao">Governance and public policy</a><span class="dica" role="tooltip" id="dica-governacao">Strategic planning, participation, multilevel governance, policy implementation and evaluation.</span></div>
+  <div class="ind-item"><a class="tema" href="../cidades-inteligentes/" aria-describedby="dica-cidades-inteligentes">Smart cities and digital transformation</a><span class="dica" role="tooltip" id="dica-cidades-inteligentes">Urban intelligence, open data, digital participation, organisational innovation and urban logistics.</span></div>
+  <div class="ind-item"><a class="tema" href="../modelacao/" aria-describedby="dica-modelacao">Modelling and decision support</a><span class="dica" role="tooltip" id="dica-modelacao">Spatial analysis, data science, foresight, indicators, multicriteria methods and decision-support tools.</span></div>
+  <div class="ind-item atual"><a class="tema atual" href="../mapa/" aria-current="page">Activity map</a></div>
+  
+
+</nav>
+  <div class="seccoes mapa" id="mapa" data-ligacoes="habitacao precos,habitacao espacial,habitacao participacao,habitacao avaliacao,educacao participacao,educacao espacial,educacao avaliacao,educacao prospetiva,demografia prospetiva,demografia espacial,demografia avaliacao,demografia indicadores,servicos-publicos espacial,servicos-publicos prospetiva,servicos-publicos avaliacao,servicos-publicos multicriterio,governacao participacao,governacao espacial,governacao avaliacao,governacao multicriterio,cidades-inteligentes dados,cidades-inteligentes participacao,cidades-inteligentes indicadores,modelacao multicriterio,modelacao espacial,modelacao dados,modelacao prospetiva">
+    <div class="mapa-rede" id="rede">
+      <svg class="mapa-linhas" id="linhas" aria-hidden="true"></svg>
+      <div class="mapa-col mapa-temas" role="group" aria-label="Themes">
+        <p class="mapa-rot">Themes</p>
+        <button type="button" class="no no-tema" id="t-habitacao" data-no="t-habitacao" aria-pressed="false"><span class="no-txt">Housing and real estate markets</span><span class="ponto"></span></button>
+        <button type="button" class="no no-tema" id="t-educacao" data-no="t-educacao" aria-pressed="false"><span class="no-txt">Education and education policy</span><span class="ponto"></span></button>
+        <button type="button" class="no no-tema" id="t-demografia" data-no="t-demografia" aria-pressed="false"><span class="no-txt">Demography and territorial development</span><span class="ponto"></span></button>
+        <button type="button" class="no no-tema" id="t-servicos-publicos" data-no="t-servicos-publicos" aria-pressed="false"><span class="no-txt">Public services and spatial justice</span><span class="ponto"></span></button>
+        <button type="button" class="no no-tema" id="t-governacao" data-no="t-governacao" aria-pressed="false"><span class="no-txt">Governance and public policy</span><span class="ponto"></span></button>
+        <button type="button" class="no no-tema" id="t-cidades-inteligentes" data-no="t-cidades-inteligentes" aria-pressed="false"><span class="no-txt">Smart cities and digital transformation</span><span class="ponto"></span></button>
+        <button type="button" class="no no-tema" id="t-modelacao" data-no="t-modelacao" aria-pressed="false"><span class="no-txt">Modelling and decision support</span><span class="ponto"></span></button>
+        
+      </div>
+      <div class="mapa-col mapa-abordagens" role="group" aria-label="Approaches">
+        <p class="mapa-rot">Approaches</p>
+        <button type="button" class="no no-abordagem" id="a-espacial" data-no="a-espacial" aria-pressed="false"><span class="ponto"></span><span class="no-txt">Spatial analysis and GIS</span></button>
+        <button type="button" class="no no-abordagem" id="a-dados" data-no="a-dados" aria-pressed="false"><span class="ponto"></span><span class="no-txt">Data science</span></button>
+        <button type="button" class="no no-abordagem" id="a-multicriterio" data-no="a-multicriterio" aria-pressed="false"><span class="ponto"></span><span class="no-txt">Multicriteria methods and decision support</span></button>
+        <button type="button" class="no no-abordagem" id="a-precos" data-no="a-precos" aria-pressed="false"><span class="ponto"></span><span class="no-txt">Price models and property valuation</span></button>
+        <button type="button" class="no no-abordagem" id="a-prospetiva" data-no="a-prospetiva" aria-pressed="false"><span class="ponto"></span><span class="no-txt">Demographic projections and foresight</span></button>
+        <button type="button" class="no no-abordagem" id="a-avaliacao" data-no="a-avaliacao" aria-pressed="false"><span class="ponto"></span><span class="no-txt">Policy and impact evaluation</span></button>
+        <button type="button" class="no no-abordagem" id="a-participacao" data-no="a-participacao" aria-pressed="false"><span class="ponto"></span><span class="no-txt">Participation and strategic planning</span></button>
+        <button type="button" class="no no-abordagem" id="a-indicadores" data-no="a-indicadores" aria-pressed="false"><span class="ponto"></span><span class="no-txt">Indicators and observatories</span></button>
+        
+      </div>
+    </div>
+    <div class="mapa-paineis" aria-live="polite">
+      <p class="mapa-dica" id="dica">Choose a theme or an approach.</p>
+      
+<div class="mapa-painel oculto" id="p-t-habitacao">
+  <h2>Housing and real estate markets</h2>
+  <p class="mapa-desc">Prices, property valuation, access to housing, housing policy and urban transformation.</p>
+  <p class="mapa-lig"><span>Linked approaches:</span>
+    <button type="button" class="chip" data-ir="a-espacial">Spatial analysis and GIS</button><button type="button" class="chip" data-ir="a-precos">Price models and property valuation</button><button type="button" class="chip" data-ir="a-avaliacao">Policy and impact evaluation</button><button type="button" class="chip" data-ir="a-participacao">Participation and strategic planning</button></p>
+  <h3>Selected work</h3>
+  <ol class="itens">
+  <li><span class="ano">2024</span><span class="txt">Gonçalves, C., Borges, M., Marques, J. L., &amp; Trigo, S. (2024). Habitar habitats de segregação funcional persistente em bairros de arrendamento público geridos pelo Instituto da Habitação e da Reabilitação Urbana. * Comunidades e Territórios*, (sp24). URL: <a href="http://journals.openedition.org/cidades/8462">http://journals.openedition.org/cidades/8462</a><span class="fmt">Articles in international journals</span></span></li>
+  <li><span class="ano">2022</span><span class="txt">Rodrigues, P. M., Gonçalves, D., de Castro, E. A., Duarte, J. B., Marques, J. L., dos Santos, J. P., ... &amp; Reis, V. (2022). O mercado imobiliário em Portugal. Lisboa, Portugal: Fundação Francisco Manuel dos Santos. <a href="https://www.ffms.pt/pt-pt/estudos/o-mercado-imobiliario-em-portugal">https://www.ffms.pt/pt-pt/estudos/o-mercado-imobiliario-em-portugal</a><span class="fmt">Books</span></span></li>
+  <li><span class="ano">2021</span><span class="txt">Rodrigues, P.; Gonçalves, D.; Castro, E.A.; Duarte, J.; Marques, J.L.; Santos, J.; Aguiar-Conraria, L.; et al (2021). The real estate market in Portugal: Prices, rents, tourism and accessibility. <em>Fundação Francisco Manuel dos Santos</em>. https://www.ffms.pt/pt-pt/estudos/o-mercado-imobiliario-em-portugal#authors-main-list<span class="fmt">Books</span></span></li>
+  <li><span class="ano">2020</span><span class="txt">Wolf, J., Batista, P., &amp; Marques, J. L. (2020). Processos de transformação urbana: uma tipificação baseada na urbanidade, na centralidade e na evolução da população dos territórios. <em>Cidades</em>, 41, 133–155. <a href="https://doi.org/10.15847/CCT.20554">https://doi.org/10.15847/CCT.20554</a><span class="fmt">Articles in international journals</span></span></li>
+  <li><span class="ano">2025–</span><span class="txt">(2025–…) “DataH - Dynamic Analysis for Territorial Approaches to Housing”; Fundação para a Ciência e a Tecnologia (2024.07312.IACDC, 10.54499/2024.07312.IACDC).<span class="fmt">Research projects</span></span></li>
+  
+  </ol>
+  <p class="mapa-mais"><a href="../habitacao/">See all work on this theme →</a></p>
+</div>
+
+<div class="mapa-painel oculto" id="p-t-educacao">
+  <h2>Education and education policy</h2>
+  <p class="mapa-desc">Education governance, school networks, infrastructure planning and evaluation of education policies.</p>
+  <p class="mapa-lig"><span>Linked approaches:</span>
+    <button type="button" class="chip" data-ir="a-espacial">Spatial analysis and GIS</button><button type="button" class="chip" data-ir="a-prospetiva">Demographic projections and foresight</button><button type="button" class="chip" data-ir="a-avaliacao">Policy and impact evaluation</button><button type="button" class="chip" data-ir="a-participacao">Participation and strategic planning</button></p>
+  <h3>Selected work</h3>
+  <ol class="itens">
+  <li><span class="ano">2023</span><span class="txt">Grifo, A., &amp; Marques, J. L. (2023). O discurso europeu na governação local da educação em Portugal.Revista Lusófona de Educação, 59, 119-141<span class="fmt">Articles in international journals</span></span></li>
+  <li><span class="ano">2023</span><span class="txt">Grifo, Ana; Duarte, Joana; Marques, João Lourenço (2023). Structural funds and education policy in Portugal during the 2014-2020 multiannual financial framework: Mapping the PIICIE, a territorialized and cooperative operation. https://ojs.eselx.ipl.pt/index.php/invep/article/view/339<span class="fmt">Articles in international journals</span></span></li>
+  <li><span class="ano">2022</span><span class="txt">Marto, M., Lourenço Marques, J., &amp; Madaleno, M. (2022). An Evaluation of the Efficiency of Tertiary Education in the Explanation of the Performance of GDP per Capita Applying Data Envelopment Analysis (DEA). Sustainability, 14(23), 15524 <a href="https://doi.org/10.3390/su142315524">https://doi.org/10.3390/su142315524</a><span class="fmt">Articles in international journals</span></span></li>
+  <li><span class="ano">2022</span><span class="txt">Wolf, J., Marto, M., Madaleno, M., &amp; Marques, J. L. (2022). The adjustment of primary schools to shrinking populations: a spatial modelling approach. <em>Investigaciones Regionales - </em>Journal of Regional Research, 2022(54), 51-64<span class="fmt">Articles in international journals</span></span></li>
+  <li><span class="ano">2025–</span><span class="txt">(2025–…) “Projeto GameLab DCSPT – Aprender, Criar e Jogar, uma iniciativa do Projeto de Inovação Pedagógica do DCSPT”; Universidade de Aveiro (GAMELAB).<span class="fmt">Research projects</span></span></li>
+  
+  </ol>
+  <p class="mapa-mais"><a href="../educacao/">See all work on this theme →</a></p>
+</div>
+
+<div class="mapa-painel oculto" id="p-t-demografia">
+  <h2>Demography and territorial development</h2>
+  <p class="mapa-desc">Population dynamics, ageing, migration, regional cohesion and territorial sustainability.</p>
+  <p class="mapa-lig"><span>Linked approaches:</span>
+    <button type="button" class="chip" data-ir="a-espacial">Spatial analysis and GIS</button><button type="button" class="chip" data-ir="a-prospetiva">Demographic projections and foresight</button><button type="button" class="chip" data-ir="a-avaliacao">Policy and impact evaluation</button><button type="button" class="chip" data-ir="a-indicadores">Indicators and observatories</button></p>
+  <h3>Selected work</h3>
+  <ol class="itens">
+  <li><span class="ano">2024</span><span class="txt">Gonçalves, C.; Marques, J.L. (2024). “Planear a Cidade-região do Futuro”. Imprensa da Universidade de Coimbra.<span class="fmt">Books</span></span></li>
+  <li><span class="ano">2023</span><span class="txt">Ferreira, J.P.; Marques, J.L.; Moreno Pires, S.; Iha, K.; &amp; Galli, A. (2023). Supporting national-level policies for sustainable consumption in Portugal: a socio-economic Ecological Footprint analysis. <em>Ecological Economics</em>. 10.1080/17535069.2022.2103447.<span class="fmt">Articles in international journals</span></span></li>
+  <li><span class="ano">2023</span><span class="txt">Sousa Gomes, Maria Cristina; Silva, Carlos Jorge; Anselmo de Castro, Eduardo; Lourenço Marques, João (2023). Fertility trends in Portugal: a regional diversity approach. https://doi.org/10.31447/AS00032573.2016218.02<span class="fmt">Articles in international journals</span></span></li>
+  <li><span class="ano">2021</span><span class="txt">Marques, J., &amp; Carballo-Cruz, F. (eds.) (2021). 30 anos de Ciência Regional em Perspetiva. Coimbra, Portugal: Almedina. <a href="https://www.almedina.net/30-anos-de-ci-ncia-regional-em-perspetiva-1609258412.html">https://www.almedina.net/30-anos-de-ci-ncia-regional-em-perspetiva-1609258412.html</a><span class="fmt">Books</span></span></li>
+  <li><span class="ano">2025–</span><span class="txt">(2025–…) “REVITA – Respostas Estratégicas para a Vitalização dos Territórios de Baixa Densidade”; PlanAPP - Centro de Competências de Planeamento, de Políticas e de Prospetiva da Administração Pública (URL).<span class="fmt">Research projects</span></span></li>
+  
+  </ol>
+  <p class="mapa-mais"><a href="../demografia/">See all work on this theme →</a></p>
+</div>
+
+<div class="mapa-painel oculto" id="p-t-servicos-publicos">
+  <h2>Public services and spatial justice</h2>
+  <p class="mapa-desc">Health, local services, accessibility, quality of life and fair distribution of opportunities.</p>
+  <p class="mapa-lig"><span>Linked approaches:</span>
+    <button type="button" class="chip" data-ir="a-espacial">Spatial analysis and GIS</button><button type="button" class="chip" data-ir="a-multicriterio">Multicriteria methods and decision support</button><button type="button" class="chip" data-ir="a-prospetiva">Demographic projections and foresight</button><button type="button" class="chip" data-ir="a-avaliacao">Policy and impact evaluation</button></p>
+  <h3>Selected work</h3>
+  <ol class="itens">
+  <li><span class="ano">2024</span><span class="txt">Batista, P., Wolf, J., Martins, R., &amp; Marques, J. L. (2024). The Location of Home Support Services for Older Adults in the Aveiro Region of Portugal. <em>Journal of Aging &amp; Social Policy</em>, 1-19. 10.1080/08959420.2024.2384182.<span class="fmt">Articles in international journals</span></span></li>
+  <li><span class="ano">2024</span><span class="txt">Feitosa, F. O., Wolf, J. H., &amp; Marques, J. L. (2024). Operationalizing spatial justice in urban planning: bridging theory with practice. <em>Urban Research &amp; Practice</em>, 1-17. <a href="https://doi.org/10.1080/17535069.2024.2341254">https://doi.org/10.1080/17535069.2024.2341254</a><span class="fmt">Articles in international journals</span></span></li>
+  <li><span class="ano">2022</span><span class="txt">Wolf, J., &amp; Marques, J. L. (2022). Justiça social no urbanismo: do território aos princípios. In F. P. Oliveira (Ed.), <em>Atas do II Congresso de Direito do Urbanismo</em> (pp. 153–172), Coimbra, Portugal: Almedina. <a href="https://www.almedina.net/atas-do-ii-congresso-de-direito-do-urbanismo-1653583542.html">https://www.almedina.net/atas-do-ii-congresso-de-direito-do-urbanismo-1653583542.html</a><span class="fmt">Chapters in international books</span></span></li>
+  <li><span class="ano">2021</span><span class="txt">Feitosa, F., Wolf, J., &amp; Marques, J. (2021). Spatial Justice Models: An Exploratory Analysis on Fair Distribution of Opportunities. In: O. Gervasi et al. (Ed.), <em>Computational Science and Its Applications – ICCSA 2021. ICCSA 2021. Lecture Notes in Computer Science</em> (pp. 674-683). Springer, Cham. <a href="https://doi.org/10.1007/978-3-030-86960-1_51">https://doi.org/10.1007/978-3-030-86960-1_51</a><span class="fmt">Chapters in international books</span></span></li>
+  <li><span class="ano">2025</span><span class="txt">(2025–2025) “Avaliação de impacto do CATL Inclusivo da ARCIL” (ARCIL).<span class="fmt">Research projects</span></span></li>
+  
+  </ol>
+  <p class="mapa-mais"><a href="../servicos-publicos/">See all work on this theme →</a></p>
+</div>
+
+<div class="mapa-painel oculto" id="p-t-governacao">
+  <h2>Governance and public policy</h2>
+  <p class="mapa-desc">Strategic planning, participation, multilevel governance, policy implementation and evaluation.</p>
+  <p class="mapa-lig"><span>Linked approaches:</span>
+    <button type="button" class="chip" data-ir="a-espacial">Spatial analysis and GIS</button><button type="button" class="chip" data-ir="a-multicriterio">Multicriteria methods and decision support</button><button type="button" class="chip" data-ir="a-avaliacao">Policy and impact evaluation</button><button type="button" class="chip" data-ir="a-participacao">Participation and strategic planning</button></p>
+  <h3>Selected work</h3>
+  <ol class="itens">
+  <li><span class="ano">2025</span><span class="txt">Marques, J.L.; ACEP – Associação para a Cooperação Entre os Povos (2025). Alfabeto da cooperação: Conceitos, histórias, imagens. <em>ACEP – Associação para a Cooperação Entre os Povos</em>. https://cesa.rc.iseg.ulisboa.pt/noticias/alfabeto-da-cooperacao-conceitos-historias-imagens-primeira-apresentacao-publica/<span class="fmt">Books</span></span></li>
+  <li><span class="ano">2023</span><span class="txt">Correia, D., Feio, J. E., Marques, J., &amp; Teixeira, L. (2023). Participatory methodology guidelines to promote citizens participation in decision-making: Evidence based on a Portuguese case study. Cities, 135, 104213.<span class="fmt">Articles in international journals</span></span></li>
+  <li><span class="ano">2022</span><span class="txt">Marques, J. L., Nogueira, F., Madaleno M., Gomes, M. C., Sousa, M., Batista, P., Silva, P., &amp; Pires, S. M (eds.) (2022). Planeamento no contexto das rápidas transformações. Aveiro: Universidade de Aveiro Editora. <a href="http://hdl.handle.net/10773/34049">http://hdl.handle.net/10773/34049</a><span class="fmt">Books</span></span></li>
+  <li><span class="ano">2021</span><span class="txt">Correia, D., Feio, J., Teixeira, L., &amp; Marques, J. L. (2021). The Inclusion of Citizens in Smart Cities Policymaking: The Potential Role of Development Studies’ Participatory Methodologies. In: N. Streitz &amp; S. Konomi (Ed.), <em>Distributed, Ambient and Pervasive Interactions. HCII 2021. Lecture Notes in Computer Science</em>, (pp. 29-40). Springer. <a href="https://doi.org/10.1007/978-3-030-77015-0_3">https://doi.org/10.1007/978-3-030-77015-0_3</a><span class="fmt">Chapters in international books</span></span></li>
+  <li><span class="ano">2018–</span><span class="txt">(2018-…). Pegada Ecológica dos Municípios Portugueses. 18 Municípios parceiros e 1 Comunidade Intermunicipal<span class="fmt">Cooperation studies and projects</span></span></li>
+  
+  </ol>
+  <p class="mapa-mais"><a href="../governacao/">See all work on this theme →</a></p>
+</div>
+
+<div class="mapa-painel oculto" id="p-t-cidades-inteligentes">
+  <h2>Smart cities and digital transformation</h2>
+  <p class="mapa-desc">Urban intelligence, open data, digital participation, organisational innovation and urban logistics.</p>
+  <p class="mapa-lig"><span>Linked approaches:</span>
+    <button type="button" class="chip" data-ir="a-dados">Data science</button><button type="button" class="chip" data-ir="a-participacao">Participation and strategic planning</button><button type="button" class="chip" data-ir="a-indicadores">Indicators and observatories</button></p>
+  <h3>Selected work</h3>
+  <ol class="itens">
+  <li><span class="ano">2024</span><span class="txt">Correia, Diogo; Lourenço Marques, João; Teixeira, Leonor (2024). A framework to guide and support the design of a smart city based on the PDCA cycle approach. <em>Journal of Systems and Information Technology</em>, 27(1), 65-93. https://doi.org/10.1108/jsit-02-2022-0055<span class="fmt">Articles in international journals</span></span></li>
+  <li><span class="ano">2023</span><span class="txt">Correia, D., Marques, J. L., &amp; Teixeira, L. (2023). Assessing and Ranking EU Cities Based on the Development Phase of the Smart City Concept. Sustainability, 15(18), 13675.<span class="fmt">Articles in international journals</span></span></li>
+  <li><span class="ano">2022</span><span class="txt">Correia, D., Marques, J. L., &amp; Teixeira, L. (2022). City@Path: A collaborative smart city planning and assessment tool. <em>International Journal of Transport Development and Integration</em>, 6(1), 66–80. <a href="http://dx.doi.org/10.2495/TDI-V6-N1-66-80">http://dx.doi.org/10.2495/TDI-V6-N1-66-80</a><span class="fmt">Articles in international journals</span></span></li>
+  <li><span class="ano">2022</span><span class="txt">Correia, D., Marques, J. L., &amp; Teixeira, L. (2022). The State-of-the-Art of Smart Cities in the European Union. Smart Cities, 5(4), 1776-1810.<span class="fmt">Articles in international journals</span></span></li>
+  <li><span class="ano">2025–</span><span class="txt">(2025–…) “CITY4CLimate - City Digital Twins for Climate Action” (CITY4CLimate).<span class="fmt">Research projects</span></span></li>
+  
+  </ol>
+  <p class="mapa-mais"><a href="../cidades-inteligentes/">See all work on this theme →</a></p>
+</div>
+
+<div class="mapa-painel oculto" id="p-t-modelacao">
+  <h2>Modelling and decision support</h2>
+  <p class="mapa-desc">Spatial analysis, data science, foresight, indicators, multicriteria methods and decision-support tools.</p>
+  <p class="mapa-lig"><span>Linked approaches:</span>
+    <button type="button" class="chip" data-ir="a-espacial">Spatial analysis and GIS</button><button type="button" class="chip" data-ir="a-dados">Data science</button><button type="button" class="chip" data-ir="a-multicriterio">Multicriteria methods and decision support</button><button type="button" class="chip" data-ir="a-prospetiva">Demographic projections and foresight</button></p>
+  <h3>Selected work</h3>
+  <ol class="itens">
+  <li><span class="ano">2020</span><span class="txt">Marques, J. L., Wolf, J. Borges, M. Batista, P. (2020) Sistemas de apoio à decisão em planeamento desafios metodológicos e concetuais, Território, Planeamento e Urbanismo – Teoria e Prática, 2, 53-79. <a href="https://doi.org/10.34624/tpu.v0i2.23720">https://doi.org/10.34624/tpu.v0i2.23720</a><span class="fmt">Articles in other refereed journals</span></span></li>
+  <li><span class="ano">2020</span><span class="txt">Marques, J. L., Wolf, J., Borges, M., &amp; Batista, P. (2020). Sistemas de apoio à decisão em planeamento: desafios metodológicos e conceptuais. In TPU: Território, Planeamento e Urbanismo: teoria e prática, 2. <a href="https://doi.org/10.34624/TPU.V0I2.23720">https://doi.org/10.34624/TPU.V0I2.23720</a><span class="fmt">Articles in other refereed journals</span></span></li>
+  <li><span class="ano">2017</span><span class="txt">lourenço marques, joao; Lopes, Diana; Martins, José Manuel (2017). A methodological comparison to forecast human health resources in Portugal. <em>14th International Conference on Urban Health</em>.<span class="fmt">Papers in proceedings</span></span></li>
+  <li><span class="ano">2011</span><span class="txt">Martins, J., Marques, M., Marques, J. L., Castro, E., Ramos, P. (2011). Modelo input-output: aplicações ao nível sectorial e regional na área do ambiente. In E. Haddad, P. Ramos, E. Castro (Ed.) <em>Modelos operacionais de economia regional</em> (pp. 71-98). Cascais, Portugal: Principia. ISBN: 9789898131829.<span class="fmt">Chapters in national books</span></span></li>
+  <li><span class="ano">2022</span><span class="txt"><strong>Monique Borges</strong>. “<a href="http://hdl.handle.net/10773/34240">Políticas públicas e apoio à decisão: formação de preferências e comparação de métodos de análise multicritério</a>”. Programa Doutoral em Políticas Públicas, Universidade de Aveiro. Co-supervisor.<span class="fmt">PhD supervision</span></span></li>
+  
+  </ol>
+  <p class="mapa-mais"><a href="../modelacao/">See all work on this theme →</a></p>
+</div>
+
+      
+<div class="mapa-painel oculto" id="p-a-espacial">
+  <h2>Spatial analysis and GIS</h2>
+  
+  <p class="mapa-lig"><span>Linked themes:</span>
+    <button type="button" class="chip" data-ir="t-habitacao">Housing and real estate markets</button><button type="button" class="chip" data-ir="t-educacao">Education and education policy</button><button type="button" class="chip" data-ir="t-demografia">Demography and territorial development</button><button type="button" class="chip" data-ir="t-servicos-publicos">Public services and spatial justice</button><button type="button" class="chip" data-ir="t-governacao">Governance and public policy</button><button type="button" class="chip" data-ir="t-modelacao">Modelling and decision support</button></p>
+  <h3>Selected work</h3>
+  <ol class="itens">
+  <li><span class="ano">2024</span><span class="txt">Batista, P., Wolf, J., Martins, R., &amp; Marques, J. L. (2024). The Location of Home Support Services for Older Adults in the Aveiro Region of Portugal. <em>Journal of Aging &amp; Social Policy</em>, 1-19. 10.1080/08959420.2024.2384182.<span class="fmt">Articles in international journals · Public services and spatial justice</span></span></li>
+  <li><span class="ano">2024</span><span class="txt">Feitosa, F. O., Wolf, J. H., &amp; Marques, J. L. (2024). Operationalizing spatial justice in urban planning: bridging theory with practice. <em>Urban Research &amp; Practice</em>, 1-17. <a href="https://doi.org/10.1080/17535069.2024.2341254">https://doi.org/10.1080/17535069.2024.2341254</a><span class="fmt">Articles in international journals · Public services and spatial justice</span></span></li>
+  <li><span class="ano">2022</span><span class="txt">Wolf, J., Marto, M., Madaleno, M., &amp; Marques, J. L. (2022). The adjustment of primary schools to shrinking populations: a spatial modelling approach. <em>Investigaciones Regionales - </em>Journal of Regional Research, 2022(54), 51-64<span class="fmt">Articles in international journals · Education and education policy</span></span></li>
+  <li><span class="ano">2021</span><span class="txt">Rodrigues, P.; Gonçalves, D.; Castro, E.A.; Duarte, J.; Marques, J.L.; Santos, J.; Aguiar-Conraria, L.; et al (2021). The real estate market in Portugal: Prices, rents, tourism and accessibility. <em>Fundação Francisco Manuel dos Santos</em>. https://www.ffms.pt/pt-pt/estudos/o-mercado-imobiliario-em-portugal#authors-main-list<span class="fmt">Books · Housing and real estate markets</span></span></li>
+  <li><span class="ano">2021</span><span class="txt">Feitosa, F., Wolf, J., &amp; Marques, J. (2021). Spatial Justice Models: An Exploratory Analysis on Fair Distribution of Opportunities. In: O. Gervasi et al. (Ed.), <em>Computational Science and Its Applications – ICCSA 2021. ICCSA 2021. Lecture Notes in Computer Science</em> (pp. 674-683). Springer, Cham. <a href="https://doi.org/10.1007/978-3-030-86960-1_51">https://doi.org/10.1007/978-3-030-86960-1_51</a><span class="fmt">Chapters in international books · Public services and spatial justice</span></span></li>
+  
+  </ol>
+  
+</div>
+
+<div class="mapa-painel oculto" id="p-a-dados">
+  <h2>Data science</h2>
+  
+  <p class="mapa-lig"><span>Linked themes:</span>
+    <button type="button" class="chip" data-ir="t-cidades-inteligentes">Smart cities and digital transformation</button><button type="button" class="chip" data-ir="t-modelacao">Modelling and decision support</button></p>
+  <h3>Selected work</h3>
+  <ol class="itens">
+  <li><span class="ano">2026</span><span class="txt">Amorim, C., Correia, D. M., Silge, J., &amp; Marques, J. L. (2026). Transforming customer support in a startup environment: from machine learning classification to retrieval-augmented generation. <em>Machine Learning</em>, 115(6), 138. <a href="https://www.researchgate.net/publication/405336322">https://www.researchgate.net/publication/405336322</a><span class="fmt">Articles in international journals · Modelling and decision support</span></span></li>
+  <li><span class="ano">2024</span><span class="txt">Marques, J.L.; Mendes, C.; Duenhas, R. (2024). O (in)sucesso na adoção de sistemas de informação para apoio à tomada de decisão na gestão pública - no Brasil e pelo mundo. <em>Anais do II Congresso Internacional de Políticas Públicas e Ciencia de Dados</em>.<span class="fmt">Papers in proceedings · Modelling and decision support</span></span></li>
+  <li><span class="ano">2023</span><span class="txt">Rodrigues, H.; Marques, J.L. (2023). Proceedings of I International Conference on Public Policies and Data Science in Amazonas. https://proceedings.science/cippcdam-2023/papers?lang=en<span class="fmt">Books · Modelling and decision support</span></span></li>
+  <li><span class="ano">2021</span><span class="txt">Madaleno, M., Marques, J. L., &amp; Tufail, M. (2021). Data Science in Economics and Business: Roots and Applications. In V. Chkoniya (Ed.), <em>Handbook of Research on Applied Data Science and Artificial Intelligence in Business and Industry</em> (pp. 544-568). Hershey, EUA: IGI Global. <a href="https://doi.org/10.4018/978-1-7998-6985-6.ch026">https://doi.org/10.4018/978-1-7998-6985-6.ch026</a><span class="fmt">Chapters in international books · Modelling and decision support</span></span></li>
+  <li><span class="ano">in progress</span><span class="txt"><strong>Sandra Barbosa</strong>. “A maturidade dos dados abertos no contexto das políticas públicas da União Europeia. Desafios, oportunidades e fragilidades”. Programa Doutoral em Políticas Públicas, Universidade de Aveiro.<span class="fmt">PhD supervision · Smart cities and digital transformation</span></span></li>
+  
+  </ol>
+  
+</div>
+
+<div class="mapa-painel oculto" id="p-a-multicriterio">
+  <h2>Multicriteria methods and decision support</h2>
+  
+  <p class="mapa-lig"><span>Linked themes:</span>
+    <button type="button" class="chip" data-ir="t-servicos-publicos">Public services and spatial justice</button><button type="button" class="chip" data-ir="t-governacao">Governance and public policy</button><button type="button" class="chip" data-ir="t-modelacao">Modelling and decision support</button></p>
+  <h3>Selected work</h3>
+  <ol class="itens">
+  <li><span class="ano">2023</span><span class="txt">Correia, D., Feio, J. E., Marques, J., &amp; Teixeira, L. (2023). Participatory methodology guidelines to promote citizens participation in decision-making: Evidence based on a Portuguese case study. Cities, 135, 104213.<span class="fmt">Articles in international journals · Governance and public policy</span></span></li>
+  <li><span class="ano">2020</span><span class="txt">Marques, J. L., Wolf, J. Borges, M. Batista, P. (2020) Sistemas de apoio à decisão em planeamento desafios metodológicos e concetuais, Território, Planeamento e Urbanismo – Teoria e Prática, 2, 53-79. <a href="https://doi.org/10.34624/tpu.v0i2.23720">https://doi.org/10.34624/tpu.v0i2.23720</a><span class="fmt">Articles in other refereed journals · Modelling and decision support</span></span></li>
+  <li><span class="ano">2020</span><span class="txt">Marques, J. L., Wolf, J., Borges, M., &amp; Batista, P. (2020). Sistemas de apoio à decisão em planeamento: desafios metodológicos e conceptuais. In TPU: Território, Planeamento e Urbanismo: teoria e prática, 2. <a href="https://doi.org/10.34624/TPU.V0I2.23720">https://doi.org/10.34624/TPU.V0I2.23720</a><span class="fmt">Articles in other refereed journals · Modelling and decision support</span></span></li>
+  <li><span class="ano">2022</span><span class="txt"><strong>Monique Borges</strong>. “<a href="http://hdl.handle.net/10773/34240">Políticas públicas e apoio à decisão: formação de preferências e comparação de métodos de análise multicritério</a>”. Programa Doutoral em Políticas Públicas, Universidade de Aveiro. Co-supervisor.<span class="fmt">PhD supervision · Modelling and decision support</span></span></li>
+  <li><span class="ano">2021</span><span class="txt">Marques, J. (2021) <em>Produção de conhecimento para o planeamento no contexto das rápidas transformações</em>. In Comunicação na Conferência “Planeamento no contexto das rápidas transformações: dados e tomada de decisão” 21 e 23 de novembro, Universidade de Aveiro.<span class="fmt">Invited talks · Modelling and decision support</span></span></li>
+  
+  </ol>
+  
+</div>
+
+<div class="mapa-painel oculto" id="p-a-precos">
+  <h2>Price models and property valuation</h2>
+  
+  <p class="mapa-lig"><span>Linked themes:</span>
+    <button type="button" class="chip" data-ir="t-habitacao">Housing and real estate markets</button></p>
+  <h3>Selected work</h3>
+  <ol class="itens">
+  <li><span class="ano">2024</span><span class="txt">Gonçalves, C., Borges, M., Marques, J. L., &amp; Trigo, S. (2024). Habitar habitats de segregação funcional persistente em bairros de arrendamento público geridos pelo Instituto da Habitação e da Reabilitação Urbana. * Comunidades e Territórios*, (sp24). URL: <a href="http://journals.openedition.org/cidades/8462">http://journals.openedition.org/cidades/8462</a><span class="fmt">Articles in international journals · Housing and real estate markets</span></span></li>
+  <li><span class="ano">2022</span><span class="txt">Rodrigues, P. M., Gonçalves, D., de Castro, E. A., Duarte, J. B., Marques, J. L., dos Santos, J. P., ... &amp; Reis, V. (2022). O mercado imobiliário em Portugal. Lisboa, Portugal: Fundação Francisco Manuel dos Santos. <a href="https://www.ffms.pt/pt-pt/estudos/o-mercado-imobiliario-em-portugal">https://www.ffms.pt/pt-pt/estudos/o-mercado-imobiliario-em-portugal</a><span class="fmt">Books · Housing and real estate markets</span></span></li>
+  <li><span class="ano">2021</span><span class="txt">Rodrigues, P.; Gonçalves, D.; Castro, E.A.; Duarte, J.; Marques, J.L.; Santos, J.; Aguiar-Conraria, L.; et al (2021). The real estate market in Portugal: Prices, rents, tourism and accessibility. <em>Fundação Francisco Manuel dos Santos</em>. https://www.ffms.pt/pt-pt/estudos/o-mercado-imobiliario-em-portugal#authors-main-list<span class="fmt">Books · Housing and real estate markets</span></span></li>
+  <li><span class="ano">2023</span><span class="txt">Viegas, M., Marques, J., &amp; Batista, P. (2023). House price indexes: an empirical exercise using spatial data analysis. <em>Revista Portuguesa de Estudos Regionais</em>, (63), 7-25.<span class="fmt">Articles in international journals · Housing and real estate markets</span></span></li>
+  <li><span class="ano">2022</span><span class="txt">Batista, P., Marques, J. L., &amp; Castro, E. (2022). Territorial patterns of housing affordability in Portugal. In: P. Rodrigues (Ed.), <em>The real estate market in Portugal </em>(pp. 73-105). Lisboa, Portugal: Fundação Francisco Manuel dos Santos. https://www.ffms.pt/publicacoes/grupo-estudos/6222/o-mercado-imobiliario-em-portugal<span class="fmt">Chapters in international books · Housing and real estate markets</span></span></li>
+  
+  </ol>
+  
+</div>
+
+<div class="mapa-painel oculto" id="p-a-prospetiva">
+  <h2>Demographic projections and foresight</h2>
+  
+  <p class="mapa-lig"><span>Linked themes:</span>
+    <button type="button" class="chip" data-ir="t-educacao">Education and education policy</button><button type="button" class="chip" data-ir="t-demografia">Demography and territorial development</button><button type="button" class="chip" data-ir="t-servicos-publicos">Public services and spatial justice</button><button type="button" class="chip" data-ir="t-modelacao">Modelling and decision support</button></p>
+  <h3>Selected work</h3>
+  <ol class="itens">
+  <li><span class="ano">2024</span><span class="txt">Gonçalves, C.; Marques, J.L. (2024). “Planear a Cidade-região do Futuro”. Imprensa da Universidade de Coimbra.<span class="fmt">Books · Demography and territorial development</span></span></li>
+  <li><span class="ano">2017</span><span class="txt">lourenço marques, joao; Lopes, Diana; Martins, José Manuel (2017). A methodological comparison to forecast human health resources in Portugal. <em>14th International Conference on Urban Health</em>.<span class="fmt">Papers in proceedings · Modelling and decision support</span></span></li>
+  <li><span class="ano">2025–</span><span class="txt">(2025–…) “REVITA – Respostas Estratégicas para a Vitalização dos Territórios de Baixa Densidade”; PlanAPP - Centro de Competências de Planeamento, de Políticas e de Prospetiva da Administração Pública (URL).<span class="fmt">Research projects · Demography and territorial development</span></span></li>
+  <li><span class="ano">2022–2023</span><span class="txt">(2022–2023) Investigador do projeto “Skills 4 Pós-COVID - Competências para o futuro no Ensino Superior”, POCH-02-53I2-FSE-000029 – Melhoria da qualidade, da eficiência e do acesso ao ensino superior e equivalente, com vista a aumentar os níveis de participação e de habilitações, particularmente para pessoas desfavorecidas. <a href="https://www.ua.pt/pt/projetos-id/1287">https://www.ua.pt/pt/projetos-id/1287</a><span class="fmt">Research projects · Education and education policy</span></span></li>
+  <li><span class="ano">2016–2017</span><span class="txt">(2016-2017) “<a href="http://www.ua.pt/govcopp/SAD_I_008">Future needs of human resources for health in Portugal</a>”, founded by the Calouste Gulbenkian Foundation.<span class="fmt">Research projects · Public services and spatial justice</span></span></li>
+  
+  </ol>
+  
+</div>
+
+<div class="mapa-painel oculto" id="p-a-avaliacao">
+  <h2>Policy and impact evaluation</h2>
+  
+  <p class="mapa-lig"><span>Linked themes:</span>
+    <button type="button" class="chip" data-ir="t-habitacao">Housing and real estate markets</button><button type="button" class="chip" data-ir="t-educacao">Education and education policy</button><button type="button" class="chip" data-ir="t-demografia">Demography and territorial development</button><button type="button" class="chip" data-ir="t-servicos-publicos">Public services and spatial justice</button><button type="button" class="chip" data-ir="t-governacao">Governance and public policy</button></p>
+  <h3>Selected work</h3>
+  <ol class="itens">
+  <li><span class="ano">2022</span><span class="txt">Marto, M., Lourenço Marques, J., &amp; Madaleno, M. (2022). An Evaluation of the Efficiency of Tertiary Education in the Explanation of the Performance of GDP per Capita Applying Data Envelopment Analysis (DEA). Sustainability, 14(23), 15524 <a href="https://doi.org/10.3390/su142315524">https://doi.org/10.3390/su142315524</a><span class="fmt">Articles in international journals · Education and education policy</span></span></li>
+  <li><span class="ano">2025</span><span class="txt">(2025–2025) “Avaliação de impacto do CATL Inclusivo da ARCIL” (ARCIL).<span class="fmt">Research projects · Public services and spatial justice</span></span></li>
+  <li><span class="ano">2025</span><span class="txt">Marques, J.L.; Borges, Monique (2025). Relatório final: Avaliação de impacto social – Análise de resultados. Centro de Atividades de Tempos Livres (CATL) Inclusivo da Associação para a Recuperação de Cidadãos Inadaptados da Lousã (ARCIL). <em>Associação para a Recuperação de Cidadãos Inadaptados da Lousã (ARCIL)</em>.<span class="fmt">Technical and scientific reports · Public services and spatial justice</span></span></li>
+  <li><span class="ano">2022–2023</span><span class="txt">(2022–2023) Investigador do projeto “Skills 4 Pós-COVID - Competências para o futuro no Ensino Superior”, POCH-02-53I2-FSE-000029 – Melhoria da qualidade, da eficiência e do acesso ao ensino superior e equivalente, com vista a aumentar os níveis de participação e de habilitações, particularmente para pessoas desfavorecidas. <a href="https://www.ua.pt/pt/projetos-id/1287">https://www.ua.pt/pt/projetos-id/1287</a><span class="fmt">Research projects · Education and education policy</span></span></li>
+  <li><span class="ano">2021</span><span class="txt"><strong>Jan-Hendrik Wolf</strong>. “<a href="https://ria.ua.pt/handle/10773/31641">Princípios de eficiência e equidade no planeamento de escolas</a>”. PhD in Public Policy, Universidade de Aveiro. Main supervisor.<span class="fmt">PhD supervision · Education and education policy</span></span></li>
+  
+  </ol>
+  
+</div>
+
+<div class="mapa-painel oculto" id="p-a-participacao">
+  <h2>Participation and strategic planning</h2>
+  
+  <p class="mapa-lig"><span>Linked themes:</span>
+    <button type="button" class="chip" data-ir="t-habitacao">Housing and real estate markets</button><button type="button" class="chip" data-ir="t-educacao">Education and education policy</button><button type="button" class="chip" data-ir="t-governacao">Governance and public policy</button><button type="button" class="chip" data-ir="t-cidades-inteligentes">Smart cities and digital transformation</button></p>
+  <h3>Selected work</h3>
+  <ol class="itens">
+  <li><span class="ano">2023</span><span class="txt">Correia, D., Feio, J. E., Marques, J., &amp; Teixeira, L. (2023). Participatory methodology guidelines to promote citizens participation in decision-making: Evidence based on a Portuguese case study. Cities, 135, 104213.<span class="fmt">Articles in international journals · Governance and public policy</span></span></li>
+  <li><span class="ano">2021</span><span class="txt">Correia, D., Feio, J., Teixeira, L., &amp; Marques, J. L. (2021). The Inclusion of Citizens in Smart Cities Policymaking: The Potential Role of Development Studies’ Participatory Methodologies. In: N. Streitz &amp; S. Konomi (Ed.), <em>Distributed, Ambient and Pervasive Interactions. HCII 2021. Lecture Notes in Computer Science</em>, (pp. 29-40). Springer. <a href="https://doi.org/10.1007/978-3-030-77015-0_3">https://doi.org/10.1007/978-3-030-77015-0_3</a><span class="fmt">Chapters in international books · Governance and public policy</span></span></li>
+  <li><span class="ano">2022–2023</span><span class="txt">(2022–2023) Investigador do projeto “Skills 4 Pós-COVID - Competências para o futuro no Ensino Superior”, POCH-02-53I2-FSE-000029 – Melhoria da qualidade, da eficiência e do acesso ao ensino superior e equivalente, com vista a aumentar os níveis de participação e de habilitações, particularmente para pessoas desfavorecidas. <a href="https://www.ua.pt/pt/projetos-id/1287">https://www.ua.pt/pt/projetos-id/1287</a><span class="fmt">Research projects · Education and education policy</span></span></li>
+  <li><span class="ano">2022–2020</span><span class="txt">(2022). Elaboração do Plano Estratégico Educativo Municipal e da Revisão da Carta Educativa do Município de Loures (Educational Strategic Plan of the Municipality of Loures).<span class="fmt">Cooperation studies and projects · Education and education policy</span></span></li>
+  <li><span class="ano">2024</span><span class="txt">A importância da participação dos cidadãos nas políticas públicas. <em>XIV Jornadas administração Pública</em>, Aveiro (2024).<span class="fmt">Invited talks · Governance and public policy</span></span></li>
+  
+  </ol>
+  
+</div>
+
+<div class="mapa-painel oculto" id="p-a-indicadores">
+  <h2>Indicators and observatories</h2>
+  
+  <p class="mapa-lig"><span>Linked themes:</span>
+    <button type="button" class="chip" data-ir="t-demografia">Demography and territorial development</button><button type="button" class="chip" data-ir="t-cidades-inteligentes">Smart cities and digital transformation</button></p>
+  <h3>Selected work</h3>
+  <ol class="itens">
+  <li><span class="ano">2023</span><span class="txt">Correia, D., Marques, J. L., &amp; Teixeira, L. (2023). Assessing and Ranking EU Cities Based on the Development Phase of the Smart City Concept. Sustainability, 15(18), 13675.<span class="fmt">Articles in international journals · Smart cities and digital transformation</span></span></li>
+  <li><span class="ano">2026</span><span class="txt">Marques, J. L., Wolf, J. H., &amp; Duarte, J. (2026). Measuring demographic vulnerability and territorial: a composite index approach. In O. Gervasi, B. Murgante, C. Garau, A. M. A. C. Rocha, M. N. Faginas Lago, D. Taniar &amp; Y. Karaca (Eds.), <em>Computational Science and Its Applications – ICCSA 2026</em> (Lecture Notes in Computer Science, vol. 16769, pp. 456–469). Cham: Springer Nature Switzerland. <a href="https://doi.org/10.1007/978-3-032-30494-0_29">https://doi.org/10.1007/978-3-032-30494-0_29</a><span class="fmt">Chapters in international books · Demography and territorial development</span></span></li>
+  <li><span class="ano">2023</span><span class="txt">Ribeiro, C; Rego, R. ; Marques, J.L. (2023). Editorial da Revista Portuguesa de Desenvolvimento Regional. <em>Revista Portuguesa de Desenvolvimento Regional</em>, 64, 07-09. https://www.review-rper.com/index.php/rper/issue/view/64/63<span class="fmt">Articles in other refereed journals · Demography and territorial development</span></span></li>
+  <li><span class="ano">2008</span><span class="txt">Marques, J. L., Castro, E., Martins, J., Marques, M., Esteves, A., Simão, R. (2008). Exercício de Prospetiva para a Região Centro - Análise de Cenários e Questionário Delphi. <em>Revista Portuguesa de Estudos Regionais,</em> 19, 111-131. <a href="https://www.review-rper.com/index.php/rper/article/view/266">https://www.review-rper.com/index.php/rper/article/view/266</a><span class="fmt">Articles in other refereed journals · Demography and territorial development</span></span></li>
+  <li><span class="ano">2006</span><span class="txt">Santinha, G., Marques, J. L., Castro, E. (2006). TIC e Desenvolvimento Regional: a necessidade de repensar a organização económica e social do território no contexto da Sociedade da Informação e do Conhecimento. <em>Revista Portuguesa de Estudos Regionais</em>, 11, 60-85. <a href="https://www.review-rper.com/index.php/rper/article/view/219">https://www.review-rper.com/index.php/rper/article/view/219</a><span class="fmt">Articles in other refereed journals · Demography and territorial development</span></span></li>
+  
+  </ol>
+  
+</div>
+
+    </div>
+  </div>
+</div>
+
+</main>
+<footer class="rodape">
+  <span>© 2026 João Lourenço Marques</span>
+  <span>Updated 2026-11-19</span>
+</footer>
+<script src="../../../static/mapa.js?v=54c2760926"></script>
+</body>
+</html>
